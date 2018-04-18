@@ -1,3 +1,5 @@
+Buy Some Give One is based on RedReader
+
 RedReader (for Android)
 =======================
 
