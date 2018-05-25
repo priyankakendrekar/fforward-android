@@ -712,11 +712,7 @@ public final class RedditPreparedPost {
 			postListDescSb.append("  ", 0);
 		}
 
-		postListDescSb.append(String.valueOf(score), BetterSSB.BOLD | BetterSSB.FOREGROUND_COLOR, pointsCol, 0, 1f);
-		postListDescSb.append(" " + context.getString(R.string.subtitle_points) + " ", 0);
 		postListDescSb.append(RRTime.formatDurationFrom(context, src.getCreatedTimeSecsUTC() * 1000), BetterSSB.BOLD | BetterSSB.FOREGROUND_COLOR, boldCol, 0, 1f);
-		postListDescSb.append(" " + context.getString(R.string.subtitle_by) + " ", 0);
-		postListDescSb.append(src.getAuthor(), BetterSSB.BOLD | BetterSSB.FOREGROUND_COLOR, boldCol, 0, 1f);
 
 		if(showSubreddit) {
 			postListDescSb.append(" " + context.getString(R.string.subtitle_to) + " ", 0);
