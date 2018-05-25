@@ -18,7 +18,7 @@
 
 <resources>
 
-    <string name="app_name" translatable="false">RedReader</string>
+    <string name="app_name" translatable="false">fforward</string>
 
     <!-- First Run Dialog -->
 
@@ -724,7 +724,7 @@
     <string name="pref_cache_precache_comments_wifionly_key" translatable="false">pref_cache_precache_comments_wifionly</string>
     <string name="pref_cache_precache_comments_wifionly_title">On Wi-Fi only</string>
 
-    <string name="mainmenu_header_subreddits_subscribed">Subscribed Subreddits</string>
+    <string name="mainmenu_header_subreddits_subscribed">Whats New</string>
     <string name="mainmenu_header_subreddits_pinned">Pinned Subreddits</string>
 
     <string name="pin_subreddit">Pin to Main Menu</string>

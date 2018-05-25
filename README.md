@@ -1,9 +1,9 @@
 Buy Some Give One is based on RedReader
 
-RedReader (for Android)
+fforward (for Android)
 =======================
 
-An unofficial, open source client for reddit.
+Where we promote mealsharing + clothes donations. Based on RedReader, an unofficial, open source client for reddit.
 
 ![Build Status](https://travis-ci.org/QuantumBadger/RedReader.svg?branch=master)
 [![Translation status](https://hosted.weblate.org/widgets/redreader/-/svg-badge.svg)](https://hosted.weblate.org/engage/redreader/?utm_source=widget)
