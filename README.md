@@ -1,9 +1,21 @@
-Buy Some Give One is based on RedReader
-
 fforward (for Android)
 =======================
 
-Where we promote mealsharing + clothes donations. Based on RedReader, an unofficial, open source client for Reddit.
+Hey!
+
+Forward is an open source Android app that will promote:
+
+- Restaurants that donate money and food to charities. One meal sold = one meal donated.
+- Shops that donate clothes to the homeless. Sell one hat = donate one hat to the homeless.
+- Groups that clean up trash at the weekends.
+
+Users will log on and see interesting projects and shops as they scroll.
+
+We have forked RedReader, an open source client for Reddit. This allows us to validate the idea for free. We will simplify and change Reddits design until it looks different from Reddit. We are just using Reddit to serve a simple JSON API for the prototype app. Users do not need to have a Reddit account to use fforward.
+
+Here is an example of a [web-app that uses the Reddit API](https://codepen.io/Teeke/live/NpZyJB), but totally redesigned. The user does not know they are using REddit.:
+
+
 
 ![Build Status](https://travis-ci.org/QuantumBadger/RedReader.svg?branch=master)
 [![Translation status](https://hosted.weblate.org/widgets/redreader/-/svg-badge.svg)](https://hosted.weblate.org/engage/redreader/?utm_source=widget)
