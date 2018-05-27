@@ -51,8 +51,6 @@ public final class RedditPostView extends FlingableItemView implements RedditPre
 	private final ImageView thumbnailView, overlayIcon;
 
 	private final LinearLayout mOuterView;
-	private final LinearLayout commentsButton;
-	private final TextView commentsText;
 
 	private int usageId = 0;
 
@@ -225,15 +223,6 @@ public final class RedditPostView extends FlingableItemView implements RedditPre
 
 		title = (TextView) rootView.findViewById(R.id.reddit_post_title);
 		subtitle = (TextView) rootView.findViewById(R.id.reddit_post_subtitle);
-		commentsButton = (LinearLayout) rootView.findViewById(R.id.reddit_post_comments_button);
-		commentsText = (TextView)commentsButton.findViewById(R.id.reddit_post_comments_text);
-
-		commentsButton.setOnClickListener(new OnClickListener() {
-			@Override
-			public void onClick(final View v) {
-				fragmentParent.onPostCommentsSelected(post);
-			}
-		});
 
 		title.setTextSize(TypedValue.COMPLEX_UNIT_PX, title.getTextSize() * fontScale);
 		subtitle.setTextSize(TypedValue.COMPLEX_UNIT_PX, subtitle.getTextSize() * fontScale);
@@ -271,7 +260,6 @@ public final class RedditPostView extends FlingableItemView implements RedditPre
 			thumbnailView.setImageBitmap(thumbnail);
 
 			title.setText(data.src.getTitle());
-			commentsText.setText(String.valueOf(data.src.getSrc().num_comments));
 
 			if(data.hasThumbnail) {
 				thumbnailView.setVisibility(VISIBLE);
@@ -295,12 +283,10 @@ public final class RedditPostView extends FlingableItemView implements RedditPre
 
 		if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
 			mOuterView.setBackgroundResource(R.drawable.rr_postlist_item_selector_main);
-			commentsButton.setBackgroundResource(R.drawable.rr_postlist_commentbutton_selector_main);
 
 		} else {
 			// On KitKat and lower, we can't do easily themed highlighting
 			mOuterView.setBackgroundColor(rrListItemBackgroundCol);
-			commentsButton.setBackgroundColor(rrPostCommentsButtonBackCol);
 		}
 
 		if(post.isRead()) {
