@@ -13,7 +13,14 @@ Users will log on and see interesting projects and shops as they scroll.
 
 We have forked RedReader, an open source client for Reddit. This allows us to validate the idea for free. We will simplify and change Reddits design until it looks different from Reddit. We are just using Reddit to serve a simple JSON API for the prototype app. Users do not need to have a Reddit account to use fforward.
 
-Here is an example of a [web-app that uses the Reddit API](https://codepen.io/Teeke/live/NpZyJB), but totally redesigned. The user does not know they are using REddit.:
+Here is an example of a [web-app that uses the Reddit API](https://codepen.io/Teeke/live/NpZyJB), but totally redesigned. The user does not know they are using Reddit.
+
+# Our Ticket System
+
+We use github issues to write tickets. Tickets are called Feature, or Design. If you see one that looks interesting, click it and try to write the code.
+
+## [fforward issues](https://github.com/Microflow/fforward-android/issues)
+
 
 
 
