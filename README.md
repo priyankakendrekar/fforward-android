@@ -11,9 +11,9 @@ Forward is an open source Android app that will promote:
 
 Users will log on and see interesting projects and shops as they scroll.
 
-We have forked RedReader, an open source client for Reddit. This allows us to validate the idea for free. We will simplify and change Reddits design until it looks different from the standard Reddit UI. We are just using Reddit to serve a simple JSON API for the prototype app. Users do not need to have a Reddit account to use fforward.
+We have forked RedReader, an open source client for Reddit. This allows us to validate the idea for free. We will simplify and change Reddits design until it looks different from the standard Reddit UI. Reddit to serves a simple JSON API for the prototype app. Users do not need to have a Reddit account to use fforward.
 
-For the prototype app, we will take a JSON feed from [this subreddit](https://www.reddit.com/r/fforwardTaiwan/). As we expand, we'll add more cities and countries.
+For the prototype app, we will take a JSON feed from [this subreddit](https://www.reddit.com/r/fforwardTaiwan/). As we expand, we'll add more cities and countries. Each country or city will have it's own subreddit.
 
 Here is an example of a [web-app that uses the Reddit API](https://codepen.io/Teeke/live/NpZyJB), but totally redesigned. The user does not know they are using Reddit.
 
