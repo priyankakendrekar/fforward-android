@@ -153,7 +153,7 @@ public final class RedditPreparedPost {
 		hasThumbnail = showThumbnails && hasThumbnail(post);
 
 		// TODO parameterise
-		final int thumbnailWidth = General.dpToPixels(context, 64);
+		final int thumbnailWidth = General.dpToPixels(context, 128);
 
 		if(hasThumbnail && hasThumbnail(post)) {
 			downloadThumbnail(context, thumbnailWidth, cm, listId);
@@ -666,27 +666,11 @@ public final class RedditPreparedPost {
 				R.attr.rrFlairTextCol
 		});
 
-		final int boldCol = appearance.getColor(0, 255),
-				rrPostSubtitleUpvoteCol = appearance.getColor(1, 255),
-				rrPostSubtitleDownvoteCol = appearance.getColor(2, 255),
-				rrFlairBackCol = appearance.getColor(3, 255),
-				rrFlairTextCol = appearance.getColor(4, 255);
+		final int boldCol = appearance.getColor(0, 255);
 
 		appearance.recycle();
 
 		final BetterSSB postListDescSb = new BetterSSB();
-
-		final int pointsCol;
-
-		final int score = computeScore();
-
-		if(isUpvoted()) {
-			pointsCol = rrPostSubtitleUpvoteCol;
-		} else if(isDownvoted()) {
-			pointsCol = rrPostSubtitleDownvoteCol;
-		} else {
-			pointsCol = boldCol;
-		}
 
 		if(src.isSpoiler()) {
 			postListDescSb.append(" SPOILER ", BetterSSB.BOLD | BetterSSB.FOREGROUND_COLOR | BetterSSB.BACKGROUND_COLOR,
@@ -703,12 +687,6 @@ public final class RedditPreparedPost {
 		if(src.isNsfw()) {
 			postListDescSb.append(" NSFW ", BetterSSB.BOLD | BetterSSB.FOREGROUND_COLOR | BetterSSB.BACKGROUND_COLOR,
 					Color.WHITE, Color.RED, 1f); // TODO color?
-			postListDescSb.append("  ", 0);
-		}
-
-		if(src.getFlairText() != null) {
-			postListDescSb.append(" " + src.getFlairText() + "\u200E ", BetterSSB.BOLD | BetterSSB.FOREGROUND_COLOR | BetterSSB.BACKGROUND_COLOR,
-					rrFlairTextCol, rrFlairBackCol, 1f);
 			postListDescSb.append("  ", 0);
 		}
 
@@ -772,17 +750,7 @@ public final class RedditPreparedPost {
 				try {
 
 					synchronized(singleImageDecodeLock) {
-
-						BitmapFactory.Options justDecodeBounds = new BitmapFactory.Options();
-						justDecodeBounds.inJustDecodeBounds = true;
-						BitmapFactory.decodeStream(cacheFile.getInputStream(), null, justDecodeBounds);
-						final int width = justDecodeBounds.outWidth;
-						final int height = justDecodeBounds.outHeight;
-
 						int factor = 1;
-
-						while(width / (factor + 1) > widthPixels
-								&& height / (factor + 1) > widthPixels) factor *= 2;
 
 						BitmapFactory.Options scaledOptions = new BitmapFactory.Options();
 						scaledOptions.inSampleSize = factor;
