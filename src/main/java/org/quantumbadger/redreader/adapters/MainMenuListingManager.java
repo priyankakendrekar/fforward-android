@@ -147,21 +147,12 @@ public class MainMenuListingManager {
 			attr.recycle();
 		}
 
-		mAdapter.appendToGroup(GROUP_MAIN_ITEMS,
-				makeItem(R.string.mainmenu_frontpage, MainMenuFragment.MENU_MENU_ACTION_FRONTPAGE, null, true));
-
 		if(PrefsUtility.pref_show_popular_main_menu(
 				context,
 				PreferenceManager.getDefaultSharedPreferences(context))) {
 			mAdapter.appendToGroup(GROUP_MAIN_ITEMS,
 								   makeItem(R.string.mainmenu_popular, MainMenuFragment.MENU_MENU_ACTION_POPULAR, null, false));
 		}
-
-		mAdapter.appendToGroup(GROUP_MAIN_ITEMS,
-				makeItem(R.string.mainmenu_all, MainMenuFragment.MENU_MENU_ACTION_ALL, null, false));
-
-		mAdapter.appendToGroup(GROUP_MAIN_ITEMS,
-				makeItem(R.string.mainmenu_custom_destination, MainMenuFragment.MENU_MENU_ACTION_CUSTOM, null, false));
 
 		if(PrefsUtility.pref_show_random_main_menu(
 				context,
