@@ -13,21 +13,21 @@ Users will log on and see interesting projects and products as they scroll.
 
 # Our Ticket System
 
-We use github issues to write tickets. Tickets are called Feature, or Design. If you see one that looks interesting, you are welcome to click it and try to write the code.
+We use github issues to write tickets. Tickets are called Feature, or Design. If you see one that looks interesting, you are welcome to click it and try to write the code. Right now we are fixing the design. The fonts + colors are uninspiring. THat needs to change.
 
 ## [fforward issues](https://github.com/Microflow/fforward-android/issues)
 
-Right now we are fixing the design.
+
 
 # fforward Back-End
 
-We have forked RedReader, an open source client for Reddit. This allows us to validate fforward for free. We will simplify and change Reddits design until it looks different from the standard Reddit UI. We use Reddit to serves a simple JSON API for the prototype. Users do not need to have a Reddit account to use fforward.
+We have forked RedReader, an open source client for Reddit. Running on the Reddit API allows us to validate fforward for free. We will simplify and change Reddits design until it looks different from the standard Reddit UI. We use Reddit to serve a JSON feed for the prototype. Users do not need to have a Reddit account to use fforward.
 
-For the prototype, we will take a JSON feed from [this subreddit](https://www.reddit.com/r/fforwardTaiwan/). As we expand, we'll add more cities and countries. Each country or city will have its own subreddit.
+For the prototype, we will take a JSON feed from [this subreddit](https://www.reddit.com/r/fforwardTaiwan/). As we expand, we'll add more cities and countries. Each country or city will have its own subreddit. 
 
 Here is an example of a [web-app that uses a re-designed Reddit API](https://codepen.io/Teeke/live/NpZyJB). The user does not know they are using Reddit.
 
-Once we fix the design and get some users, we hope to become a charity!!!
+Once we fix the design and get some users, we hope to become a Taiwanese charity!
 
 
 
