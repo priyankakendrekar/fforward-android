@@ -34,7 +34,7 @@ Once we fix the design and get some users, we hope to become a Taiwanese charity
 ![Build Status](https://travis-ci.org/QuantumBadger/RedReader.svg?branch=master)
 [![Translation status](https://hosted.weblate.org/widgets/redreader/-/svg-badge.svg)](https://hosted.weblate.org/engage/redreader/?utm_source=widget)
 
-Features
+RedReader/fforward Features
 --------
 
 * Free and Open Source Software - no ads/tracking.
