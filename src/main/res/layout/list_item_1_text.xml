@@ -10,8 +10,11 @@
 	android:gravity="center_vertical"
 	android:minHeight="48dp"
 	android:paddingBottom="8dp"
+	android:fontFamily="Raleway-Thin"
 	android:paddingLeft="16dp"
 	android:paddingRight="16dp"
 	android:paddingTop="8dp"
 	android:textColor="?android:textColorPrimary"
-	android:textSize="16sp"/>
+	android:textSize="56sp"/>
+
+	<!-- fontFamliy	can only be used in API 16 or higher. Current min set to 14 -->

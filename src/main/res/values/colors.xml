@@ -19,7 +19,7 @@
 <resources>
 
     <color name="lightWindowBackground">#FBFBFB</color>
-    <color name="darkWindowBackground">#000000</color>
+    <color name="darkWindowBackground">#222222</color><!-- ORIG 000000-->
 	<color name="settingsWindowBackground">#333333</color>
 	<color name="actionbarSelectBackground">#44FFFFFF</color>
 	<color name="listitemSelectBackground">#33888888</color>

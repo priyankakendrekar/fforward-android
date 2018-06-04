@@ -26,7 +26,7 @@
         <item name="colorPrimaryDark">#000000</item>
         <item name="colorAccent">#99DDDD</item>
 
-		<item name="rrPostListHeaderBackgroundCol">#323232</item>
+		<item name="rrPostListHeaderBackgroundCol">#fefefe</item>
 
         <item name="rrMainTextCol">#FFFFFF</item>
 		<item name="rrSubTextCol">#AAAAAA</item>
@@ -337,7 +337,7 @@
     </style>
 
     <style name="RR.Light.Gray" parent="RR.Light.DarkActionBar">
-        <item name="colorPrimaryDark">#222222</item>
+        <item name="colorPrimaryDark">#333333</item>
         <item name="colorAccent">#607d8b</item>
     </style>
 
@@ -352,18 +352,18 @@
     </style>
 
     <style name="RR.Light.Red" parent="RR.Light.DarkActionBar">
-        <item name="colorPrimary">#008080</item> <!--Default theme loads here -->
+        <item name="colorPrimary">#008080</item> <!--Default theme loads here. DESIGNCOLORS -(We use the DESIGNCOLORS tag to help us locate key design lines easily -->
         <item name="colorPrimaryDark">#006060</item>
     </style>
 
     <style name="RR.Light.Green" parent="RR.Light.DarkActionBar">
-        <item name="colorPrimary">#4caf50</item>
-        <item name="colorPrimaryDark">#388e3c</item>
+        <item name="colorPrimary">#002c00</item>
+        <item name="colorPrimaryDark">#002100</item>
     </style>
 
     <style name="RR.Light.Orange" parent="RR.Light.DarkActionBar">
-        <item name="colorPrimary">#ff9800</item>
-        <item name="colorPrimaryDark">#f57c00</item>
+        <item name="colorPrimary">#dd5600</item>
+        <item name="colorPrimaryDark">#cc4400</item>
     </style>
 
 </resources>
