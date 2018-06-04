@@ -23,6 +23,7 @@ import android.graphics.Color;
 import android.graphics.Typeface;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.view.Gravity;
 import org.quantumbadger.redreader.R;
 import org.quantumbadger.redreader.common.General;
 
@@ -37,7 +38,7 @@ public final class PostListingHeader extends LinearLayout {
 			final TypedArray appearance = context.obtainStyledAttributes(new int[]{
 					R.attr.rrPostListHeaderBackgroundCol});
 
-			setBackgroundColor(appearance.getColor(0, General.COLOR_INVALID));
+			setBackgroundColor(appearance.getColor(0, General.COLOR_INVALID)); //DESIGNCOLORS - sets background color of subreddit title.
 
 			appearance.recycle();
 		}
@@ -46,24 +47,29 @@ public final class PostListingHeader extends LinearLayout {
 
 		setOrientation(LinearLayout.VERTICAL);
 
-		final int sidesPadding = (int)(15.0f * dpScale);
-		final int topPadding = (int)(10.0f * dpScale);
+		//final int sidesPadding = (int)(15.0f * dpScale);
+		//final int topPadding = (int)(10.0f * dpScale);
 
-		setPadding(sidesPadding, topPadding, sidesPadding, topPadding);
+		//setPadding(sidesPadding, topPadding, sidesPadding, topPadding);
 
-		final Typeface tf = Typeface.createFromAsset(context.getAssets(), "fonts/Roboto-Light.ttf");
+		final Typeface tf = Typeface.createFromAsset(context.getAssets(), "fonts/Raleway-Thin.ttf");
 
 		final TextView title = new TextView(context);
 		title.setText(titleText);
-		title.setTextSize(22.0f);
+		title.setTextSize(27.0f); //ORIG 22.0f DESIGNCOLORS Sets size of subreddit name text
 		title.setTypeface(tf);
-		title.setTextColor(Color.WHITE);
+		title.setGravity(Gravity.CENTER);
+		title.setBackgroundColor(Color.WHITE);
+		title.setTextColor(Color.BLACK); // DESIGNCOLORS Sets the color of the Subreddit title text.
 		addView(title);
 
 		final TextView subtitle = new TextView(context);
-		subtitle.setTextSize(14.0f);
+		subtitle.setTextSize(19.0f);
 		subtitle.setText(subtitleText);
-		subtitle.setTextColor(Color.rgb(200, 200, 200));
+		subtitle.setGravity(Gravity.CENTER);
+		subtitle.setBackgroundColor(Color.rgb(255, 255, 255));
+		subtitle.setTypeface(tf);
+		subtitle.setTextColor(Color.rgb(10, 10, 10));
 		addView(subtitle);
 	}
 }
