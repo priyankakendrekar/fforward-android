@@ -83,20 +83,20 @@
 					android:paddingRight="5dp"
 					android:paddingTop="5dp"
 					android:paddingBottom="0dp"
-					android:textSize="21sp"/>
+					android:textSize="25sp"/> <!--ORIG 21sp-->
 
 			<!-- todo theme color -->
 			<TextView
 					android:id="@+id/reddit_post_subtitle"
 					android:layout_width="match_parent"
 					android:layout_height="wrap_content"
-					android:gravity="center_vertical"
-					android:textColor="#909090"
+					android:gravity="center"
+					android:textColor="#333333"
 					android:paddingLeft="10dp"
 					android:paddingRight="5dp"
 					android:paddingTop="1dp"
 					android:paddingBottom="5dp"
-					android:textSize="16sp"/>
+					android:textSize="17sp"/><!--ORIG 16sp -->
 
 		</LinearLayout>
 
