@@ -304,7 +304,7 @@
         <item name="rrPostCommentsButtonBackCol">#EEEEEE</item>
         <item name="rrPostCommentsButtonHighlightCol">#CCCCCC</item>
         <item name="rrPostCommentsButtonTextCol">#666666</item>
-        <item name="rrPostThumbnailBackground">#DDDDDD</item>
+        <item name="rrPostThumbnailBackground">#FFFF</item>
         <item name="rrPostFlingTextCol">?colorPrimary</item>
         <item name="rrFlairBackCol">#DDDDDD</item>
         <item name="rrFlairTextCol">#444444</item>
